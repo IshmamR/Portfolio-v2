@@ -11,7 +11,7 @@ const Hero = ({heroData}) => {
 	}, []);
 
 	return (
-		<div className="Hero w-full flex flex-wrap items-center justify-center bg-gradient-to-r from-green-500 to-blue-700" id="hero">
+		<div className="Hero w-full flex flex-wrap items-end justify-center bg-gradient-to-r from-green-500 to-blue-700" id="hero">
 			<div className="w-10/12 mx-auto flex md:flex-row-reverse flex-wrap items-center justify-between mt-10 md:mt-20">
 				<div className="hero-image w-full lg:w-2/5 flex items-center justify-center">
 					<img src={ELECTRODE} className="animate-pulse" alt="electrode" />

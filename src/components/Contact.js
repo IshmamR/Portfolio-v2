@@ -27,9 +27,9 @@ const Contact = ({contactData}) => {
 	}
 
 	return (
-		<div className="Contact w-10/12 mx-auto py-10" id="contact">
+		<div className="Contact w-full bg-gray-100 mx-auto py-10" id="contact">
 			<h1 className="text-4xl text-center my-5">Contact Me</h1>
-			<form className="w-full md:w-2/3 mx-auto" onSubmit={handleSubmit}>
+			<form className="w-10/12 md:w-2/3 mx-auto" onSubmit={handleSubmit}>
 				<label htmlFor="name" className="text-xl">Name:</label>
 				<input 
 					className="w-full bg-white border border-gray-500 px-3 py-1" 

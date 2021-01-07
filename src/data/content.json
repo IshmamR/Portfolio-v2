@@ -1,7 +1,8 @@
 {
 	"navbar": {
 		"links": [ 
-			{"name": "Projects", "to": "/#projects"}, 
+			{"name": "Projects", "to": "/#projects"},
+			{"name": "About", "to": "/#about"}, 
 			{"name": "Contact", "to": "/#contact"} 
 		]
 	},
@@ -10,17 +11,23 @@
 		"typical": [ "Web developer", 1000, "Programmer", 1000, "JavaScript enthusiast", 1000 ],
 		"button": "Contact Me"
 	},
-	"skills": [
-		{"name": "html", "img": "/html.png"},
-		{"name": "css", "img": "/css.png"},
-		{"name": "javascript", "img": "/javascript.png"},
-		{"name": "react", "img": "/react.png"},
-		{"name": "tailwind", "img": "/tailwind.png"},
-		{"name": "bootstrap", "img": "/bootstrap.png"},
-		{"name": "nodejs", "img": "/nodejs.png"},
-		{"name": "mongodb", "img": "/mongodb.png"},
-		{"name": "electron", "img": "/electron.png"}
-	],
+	"skills": {
+		"icons": [
+			{"name": "html", "img": "/html.png"},
+			{"name": "css", "img": "/css.png"},
+			{"name": "javascript", "img": "/javascript.png"},
+			{"name": "react", "img": "/react.png"},
+			{"name": "tailwind", "img": "/tailwind.png"},
+			{"name": "bootstrap", "img": "/bootstrap.png"},
+			{"name": "nodejs", "img": "/nodejs.png"},
+			{"name": "mongodb", "img": "/mongodb.png"},
+			{"name": "electron", "img": "/electron.png"}
+		],
+		"frontend": [ "HTML", "CSS", "JavaScript" ],
+		"frameworks": [ "BootStrap", "ReactJS", "Jquery", "Tailwind" ],
+		"backend": [ "NodeJS", "Express", "MongoDB" ],
+		"other": [ "Git & GitHub", "Browser Extension Development", "FireBase", "ElectronJS" ]
+	},
 	"about": {
 		"top-text": "I am a self-taught web developer and programmer and a guy slighty obsessed with code quality.",
 		"bottom-text": "I build new projects and love to get more project ideas from others. I am a fast learner and a good problem solver. While I am still a college student, I still like to learn more about programming and love to build new projects.",
@@ -36,28 +43,28 @@
 	"projects": [
 		{
 			"name": "Book-Lister", 
-			"description": "",
+			"description": "Search, find, and add books to your list. A reading list web-app developed using React js and the Google Books API.",
 			"img": "booklister.jpeg",
 			"github": "https://github.com/IshmamR/Book-Lister",
 			"demo": "https://books-lister.netlify.app/"
 		},
 		{
 			"name": "Searchia", 
-			"description": "",
+			"description": "A search engine clone built with React js that takes a query and returns search results. Created with the help of Google Search API.",
 			"img": "searchia.jpeg",
 			"github": "https://github.com/IshmamR/searchia",
 			"demo": "https://searchia.netlify.app/"
 		},
 		{
 			"name": "Promethewz", 
-			"description": "",
+			"description": "Desktop Screen recorder application developed using ElectronJS (JavaScript framework). Built installer for Windows OS users.",
 			"img": "promethewz.jpeg",
 			"github": "https://github.com/IshmamR/Promethewz-recorder",
 			"demo": "https://promethewz-9.web.app/"
 		},
 		{
 			"name": "Shortly", 
-			"description": "",
+			"description": "A URL shortener website built with React js and SHRTCODE API. Instantly provides 3 shortened URL(s) for your link.",
 			"img": "shortly.jpeg",
 			"github": "https://github.com/IshmamR/Shortly",
 			"demo": "https://shortened.netlify.app/"

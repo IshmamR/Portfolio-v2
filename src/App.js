@@ -9,6 +9,7 @@ const Skills = lazy(() => import('./components/Skills'));
 const About = lazy(() => import('./components/About'));
 const Contact = lazy(() => import('./components/Contact'));
 const ScrollUp = lazy(() => import('./components/ScrollUp'));
+const Footer = lazy(() => import('./components/Footer'));
 
 const App = () => {
 	return (
@@ -30,6 +31,9 @@ const App = () => {
 						</Suspense>
 						<Suspense fallback={<div></div>}>
 							<Contact contactData={content.contact} />
+						</Suspense>
+						<Suspense fallback={<div></div>}>
+							<Footer />
 						</Suspense>
 						<Suspense fallback={<div></div>}>
 							<ScrollUp />
