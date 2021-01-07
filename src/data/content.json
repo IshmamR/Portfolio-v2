@@ -1,0 +1,66 @@
+{
+	"navbar": {
+		"links": [ 
+			{"name": "Projects", "to": "/#projects"}, 
+			{"name": "Contact", "to": "/#contact"} 
+		]
+	},
+	"hero": {
+		"headings": [ "Hi!", "I'm Ishmam Rahman" ],
+		"typical": [ "Web developer", 1000, "Programmer", 1000, "JavaScript enthusiast", 1000 ],
+		"button": "Contact Me"
+	},
+	"skills": [
+		{"name": "html", "img": "/html.png"},
+		{"name": "css", "img": "/css.png"},
+		{"name": "javascript", "img": "/javascript.png"},
+		{"name": "react", "img": "/react.png"},
+		{"name": "tailwind", "img": "/tailwind.png"},
+		{"name": "bootstrap", "img": "/bootstrap.png"},
+		{"name": "nodejs", "img": "/nodejs.png"},
+		{"name": "mongodb", "img": "/mongodb.png"},
+		{"name": "electron", "img": "/electron.png"}
+	],
+	"about": {
+		"top-text": "I am a self-taught web developer and programmer and a guy slighty obsessed with code quality.",
+		"bottom-text": "I build new projects and love to get more project ideas from others. I am a fast learner and a good problem solver. While I am still a college student, I still like to learn more about programming and love to build new projects.",
+		"social-links": {
+			"github": "https://github.com/IshmamR",
+			"linkedin": "https://www.linkedin.com/in/ishmam-rahman-8340411b2/",
+			"facebook": "https://www.facebook.com/ishmam.rahman.5201"
+		}
+	},
+	"contact": {
+		"email": "ishmam785@gmail.com"
+	},
+	"projects": [
+		{
+			"name": "Book-Lister", 
+			"description": "",
+			"img": "booklister.jpeg",
+			"github": "https://github.com/IshmamR/Book-Lister",
+			"demo": "https://books-lister.netlify.app/"
+		},
+		{
+			"name": "Searchia", 
+			"description": "",
+			"img": "searchia.jpeg",
+			"github": "https://github.com/IshmamR/searchia",
+			"demo": "https://searchia.netlify.app/"
+		},
+		{
+			"name": "Promethewz", 
+			"description": "",
+			"img": "promethewz.jpeg",
+			"github": "https://github.com/IshmamR/Promethewz-recorder",
+			"demo": "https://promethewz-9.web.app/"
+		},
+		{
+			"name": "Shortly", 
+			"description": "",
+			"img": "shortly.jpeg",
+			"github": "https://github.com/IshmamR/Shortly",
+			"demo": "https://shortened.netlify.app/"
+		}
+	]
+}
