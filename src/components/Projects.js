@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = ({projData}) => {
 	return (
-		<div className="Projects bg-gradient-to-r from-green-50 to-blue-50" id="projects">
+		<div className="Projects bg-white" id="projects">
 			<div className="bg-gradient-to-bl from-transparent to-white py-5">
 			
 			<h1 className="text-5xl text-center my-16">Recent Projects...</h1>

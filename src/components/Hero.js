@@ -3,9 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import Typical from 'react-typical';
 import ELECTRODE from '../images/electrode-min.png';
+import BLOB from '../images/blob.png';
 
 const Hero = ({heroData}) => {
 	const [animate, setAnimate] = useState(false);
+	const [hover, setHover] = useState(false);
 	useEffect(() => {
 		setAnimate(true);
 	}, []);
@@ -14,7 +16,13 @@ const Hero = ({heroData}) => {
 		<div className="Hero w-full flex flex-wrap items-end justify-center bg-gradient-to-r from-green-500 to-blue-700" id="hero">
 			<div className="w-10/12 mx-auto flex md:flex-row-reverse flex-wrap items-center justify-between mt-10 md:mt-20">
 				<div className="hero-image w-full lg:w-2/5 flex items-center justify-center">
-					<img src={ELECTRODE} className="animate-pulse" alt="electrode" />
+					{/* <img src={ELECTRODE} className="blob animate-pulse" alt="electrode" /> */}
+					<img src={BLOB} 
+						onMouseOver={() => {setHover(true)}} 
+						onMouseLeave={() => {setHover(false)}} 
+						className={`${!hover ? 'dur-fast shadow-md' : 'dur-slow shadow-2xl'} blob`} 
+						alt="electrode" 
+					/>
 				</div>
 
 				<div className="text-center lg:text-left text-white mx-auto lg:mx-0">

@@ -35,8 +35,12 @@ const NavBar = ({navData}) => {
 
 				<div className="flex items-center">
 					{navData.links.map((link, index) => (
-							<HashLink to={link.to} className="text-lg md:text-xl ml-2" key={index} scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
-								<span className="px-3 py-2 hover:shadow-inner">
+							<HashLink to={link.to} 
+								className="text-lg md:text-xl ml-1 md:ml-2" 
+								key={index} 
+								scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+							>
+								<span className="px-1 md:px-3 py-2 hover:shadow-inner">
 									{link.name}
 								</span>
 							</HashLink>

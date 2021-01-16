@@ -15,8 +15,8 @@ const About = ({aboutData}) => {
 		document.body.removeChild(a);
 	}
 	return (
-		<div className="About text-center py-4" id="about">
-			<h1 className="text-4xl my-8">About Me</h1>
+		<div className="About text-center pt-2 pb-12" id="about">
+			<h1 className="text-4xl mt-16 mb-8">About Me</h1>
 			<div className="w-4/5 md:w-1/2 mx-auto bg-green-100 shadow-sm hover:shadow-inner p-4 mb-2">
 				<h3 className="text-xl">
 					{aboutData["top-text"]}
