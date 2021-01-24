@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-const Projects = ({projData}) => {
+const AllProjects = ({projData}) => {
 	return (
-		<div className="Projects bg-white" id="projects">
-			<div className="bg-gradient-to-bl from-transparent to-white py-5">
+		<div className="AllProjects bg-purple-500" id="projects">
+			<div className="bg-gradient-to-b from-transparent to-white py-2">
 			
-			<h1 className="text-5xl text-center my-16">Recent Projects...</h1>
+			<h1 className="text-5xl text-center my-16">All Projects</h1>
 			{projData.map((proj, index) => {
-				return index < 5 ? (
+				return (
 					<div 
 						className={`${index%2===0? 'flex-row': 'flex-row-reverse'} Project w-10/12 lg:w-2/3 mx-auto mb-10 flex flex-wrap items-center justify-between`}
 					 	key={index}
@@ -21,7 +21,7 @@ const Projects = ({projData}) => {
 							/>
 						</div>
 
-						<div className="projDesc w-full md:w-3/5 shadow-md md:shadow-2xl rounded-lg p-3 md:p-6 text-center md:text-left">
+						<div className="projDesc bg-white bg-opacity-25 w-full md:w-3/5 shadow-md md:shadow-2xl rounded-lg p-3 md:p-6 text-center md:text-left">
 							<h1 className="text-4xl mb-2">{proj.name}</h1>
 							<p className="text-lg mb-3">
 								{proj.description}
@@ -40,20 +40,11 @@ const Projects = ({projData}) => {
 							</a>
 						</div>
 					</div>
-				) : ''
+				)
 			})}
-
-			<div className="w-10/12 mx-auto text-center my-12">
-				<Link to="/projects">
-					<button className="bg-indigo-700 hover:bg-indigo-500 py-2 px-3 rounded-full text-white text-lg">
-						Show All Projects
-					</button>
-				</Link>
-			</div>
-
 			</div>
 		</div>
 	)
 }
 
-export default Projects;
+export default AllProjects;

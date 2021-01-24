@@ -69,6 +69,97 @@
 			"img": "shortly.jpeg",
 			"github": "https://github.com/IshmamR/Shortly",
 			"demo": "https://shortened.netlify.app/"
+		},
+		{
+			"name": "Corona-AI", 
+			"description": "A website for COVID-19 info worldwide.",
+			"img": "corona-ai.PNG",
+			"github": "https://github.com/IshmamR/Shortly",
+			"demo": "https://corona-ai.netlify.app/"
+		},
+		{
+			"name": "Wordzz", 
+			"description": "English dictionary web app with paper-like UI.",
+			"img": "wordzz.PNG",
+			"github": "https://github.com/IshmamR/Shortly",
+			"demo": "https://w0rdzz.web.app/"
+		},
+		{
+			"name": "MLBB Heroes", 
+			"description": "Information about popular game (Mobile Legends) heroes. Created with React JS and Node REST API.",
+			"img": "mlbb-heroes.PNG",
+			"github": "https://github.com/IshmamR/mlbb-heroes",
+			"demo": "https://mobile-legends-bb.web.app/"
+		},
+		{
+			"name": "Drop n Crop", 
+			"description": "ReactJS Image resizer web app.",
+			"img": "drop-n-crop.PNG",
+			"github": "https://github.com/IshmamR/covid-counter-v1",
+			"demo": "https://drop-n-crop.netlify.app/"
+		},
+		{
+			"name": "To-do list Z", 
+			"description": "A to-do list web app with cool features.",
+			"img": "todo-list.PNG",
+			"github": "https://github.com/IshmamR/todo-list",
+			"demo": "https://todolist-webapp.netlify.app/"
+		},
+		{
+			"name": "Drawing Machine", 
+			"description": "Web app for drawing and downloading the image. Built with vanilla JavaScript.",
+			"img": "drawing-machine.PNG",
+			"github": "https://github.com/IshmamR/Limo-Light",
+			"demo": "https://drrawing-machine.netlify.app/"
+		},
+		{
+			"name": "PassGen-X",
+			"description": "Random password generator web app.",
+			"img": "passgenx.PNG",
+			"github": "https://github.com/IshmamR/Limo-Light",
+			"demo": "https://passgenx.netlify.app/"
+		},
+		{
+			"name": "LimoLight", 
+			"description": "Website template for a food delivery app. Created with HTML5, CSS3 and JavaScript.",
+			"img": "limolight.png",
+			"github": "https://github.com/IshmamR/Limo-Light",
+			"demo": "https://limolight.netlify.app/"
+		},
+		{
+			"name": "Leave a Message", 
+			"description": "PHP CRUD application that asks and stores information from the visitors.",
+			"img": "laam.PNG",
+			"github": "https://github.com/IshmamR/lam",
+			"demo": "http://ishmam.rf.gd/LaM/index.php?i=1"
+		},
+		{
+			"name": "Quran reader", 
+			"description": "A fullstack(Node.js + React), low-size(~700kb) Quran reader app.",
+			"img": "Quran.PNG",
+			"github": "https://github.com/IshmamR/Quran-reader.git",
+			"demo": "https://quran-reader.netlify.app/"
+		},
+		{
+			"name": "Portfolio Template", 
+			"description": "A portfolio website template created with Bootstrap and PHP.",
+			"img": "portfolio-template.PNG",
+			"github": "https://github.com/IshmamR/portfolio",
+			"demo": "https://ishmams.herokuapp.com/"
+		},
+		{
+			"name": "Info Bottle", 
+			"description": "A ReactJS web application which shows information about ongoing and upcoming animes.",
+			"img": "info-bottle.PNG",
+			"github": "https://github.com/IshmamR/info-bottle",
+			"demo": "https://a-nimee.netlify.app/"
+		},
+		{
+			"name": "Covid Counter", 
+			"description": "PHP web-app built with scrape functionality that shows real-time data of COVID-19 patients.",
+			"img": "covid-counter-v1.PNG",
+			"github": "https://github.com/IshmamR/covid-counter-v1",
+			"demo": "http://ishmam.rf.gd/Covid-Counter/index.php"
 		}
 	]
 }

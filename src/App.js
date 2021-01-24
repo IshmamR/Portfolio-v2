@@ -1,13 +1,11 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import content from './data/content';
+import content from './data/content.json';
 import NavBar from './components/NavBar';
-import Hero from './components/Hero';
 
-const Projects = lazy(() => import('./components/Projects'));
-const Skills = lazy(() => import('./components/Skills'));
-const About = lazy(() => import('./components/About'));
-const Contact = lazy(() => import('./components/Contact'));
+const Home = lazy(() => import('./pages/Home'));
+const AllProjects = lazy(() => import('./pages/AllProjects'));
+
 const ScrollUp = lazy(() => import('./components/ScrollUp'));
 const Footer = lazy(() => import('./components/Footer'));
 
@@ -15,32 +13,30 @@ const App = () => {
 	return (
 		<div className="App">
 			<BrowserRouter>
-				<NavBar navData={content.navbar} />
-				<Hero heroData={content.hero} />
-				
 				<Switch>
-					<Route path="/">
+					
+					<Route exact path="/">
+						<NavBar navData={content.navbar} />
 						<Suspense fallback={<div></div>}>
-							<Projects projData={content.projects} />
-						</Suspense>
-						<Suspense fallback={<div></div>}>
-							<Skills skillData={content.skills} />
-						</Suspense>
-						<Suspense fallback={<div></div>}>
-							<About aboutData={content.about} />
-						</Suspense>
-						<Suspense fallback={<div></div>}>
-							<Contact contactData={content.contact} />
-						</Suspense>
-						<Suspense fallback={<div></div>}>
-							<Footer />
+							<Home />
 						</Suspense>
 						<Suspense fallback={<div></div>}>
 							<ScrollUp />
 						</Suspense>
 					</Route>
+
+					<Route exact path="/projects">
+						<NavBar navData={content.navbar} />
+						<Suspense fallback={<div></div>}>
+							<AllProjects projData={content.projects} />
+						</Suspense>
+					</Route>
+
 				</Switch>
 				
+				<Suspense fallback={<div></div>}>
+					<Footer />
+				</Suspense>
 			</BrowserRouter>
 		</div>
 	)

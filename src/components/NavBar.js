@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import LOGO from '../images/electrode-min.png';
 
@@ -29,9 +29,9 @@ const NavBar = ({navData}) => {
 			}
 		>
 			<div className="flex justify-between items-center w-10/12 mx-auto">
-				<HashLink to="/#hero" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
+				<Link to="/">
 					<img className="w-10" src={LOGO} alt="IR" />
-				</HashLink>
+				</Link>
 
 				<div className="flex items-center">
 					{navData.links.map((link, index) => (
